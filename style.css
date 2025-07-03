@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 0.5em;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.config-modal {
+    background-color: aquamarine;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.config-modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.config-modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2em;
+}
+
+.config-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.config-guardar-btn {
+    margin-top: 3em;
+}
+
+#config-modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer-display {
+    padding: 1em;
+    font-size: 2rem;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 1em;
+}
+
+.hidden {
+    display: none;
+}

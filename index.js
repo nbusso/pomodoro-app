@@ -37,8 +37,11 @@ configModalForm.addEventListener('submit', function(e) {
     sessionTimeData = parseInt(document.getElementById('session-time').value, 10)
     breakTimeData = parseInt(document.getElementById('break-time').value, 10)
     pomodoroCount = parseInt(document.getElementById('pomodoros').value, 10)
+    tiempoRestante = sessionTimeData * 60
 
     document.getElementById('config-modal').classList.toggle('hidden')
+    
+    renderTimer()
 })
 
 function renderTimer() {
@@ -74,6 +77,9 @@ function reset() {
     intervalo = null
 
     tiempoRestante = sessionTimeData * 60
+
+    document.getElementById('pause-btn').disabled = true
+    document.getElementById('reset-btn').disabled = true
     
     renderTimer()
 }

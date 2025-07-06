@@ -14,6 +14,8 @@
         </button>
         <div id="config-values">
         </div>
+        <p id="session-type">
+        </p>
         <div id="timer-display" class="timer-display">25:00</div>
         <div class="timer-controls">
             <button class="btn" id="start-btn">Start</button>
@@ -33,6 +35,7 @@
             <form id="config-modal-form">
                 <label for="session-time">Tiempo de sesión (min):</label>
                 <select id="session-time" name="session-time">
+                    <option value="0.2">TEST</option>
                     <option value="15">15</option>   
                     <option value="20">20</option>
                     <option value="25" selected>25</option>
@@ -47,6 +50,7 @@
 
                 <label for="break-time">Tiempo de pausa (min):</label>
                 <select name="break-time" id="break-time">
+                    <option value="0.1">TEST</option>
                     <option value="5">5</option>
                     <option value="10" selected>10</option>
                     <option value="15">15</option>
